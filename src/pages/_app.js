@@ -1,8 +1,8 @@
-import { MainMenu, MainLayout, MainContent } from "../src/components";
-import "../styles/globals.css";
-import "../styles/vars.colors.css";
-import "../styles/vars.globals.css";
-import "../styles/utils.margins.css";
+import { MainMenu, MainLayout, MainContent } from "components";
+import "styles/globals.css";
+import "styles/vars.colors.css";
+import "styles/vars.globals.css";
+import "styles/utils.margins.css";
 
 function MyApp({ Component, pageProps }) {
     return (

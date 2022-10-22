@@ -11,7 +11,7 @@ const MainMenu = () => {
     const handleMenu = () => {
         setisCollapsed(!isCollapsed);
     };
-    console.log(isCollapsed);
+
     return (
         <div className={`${menu.main} ${isCollapsed ? menu.isCollapsed : ""}`}>
             {menuItems.map((item) => (

@@ -1,0 +1,50 @@
+.common {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+
+    touch-action: manipulation;
+    user-select: none;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid grey;
+    transition: all 250ms ease-in-out;
+
+    font-family: var(--ff-sans);
+    font-weight: var(--type-weight-regular);
+    text-transform: none;
+    border-radius: var(--radius-base);
+}
+
+.common:focus {
+    outline: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.base {
+    height: calc(var(--unit) * 8);
+    padding: calc(var(--unit) * 2) calc(var(--unit) * 3);
+}
+
+.primary {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: color(var(--color-primary) blackness(+15%));
+}
+
+.primary:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.primary:focus {
+    box-shadow: 0 0 10px color(var(--color-primary) a(100%));
+}
+
+.secondary {
+    composes: primary;
+    composes: mb-sml-2 from global;
+}

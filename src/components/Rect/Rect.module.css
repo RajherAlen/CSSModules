@@ -1,0 +1,14 @@
+.rect {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    background-color: var(--color-primary);
+}
+
+.is-toggled {
+    background-color: var(--color-success);
+}
+
+.red {
+    color: red;
+}

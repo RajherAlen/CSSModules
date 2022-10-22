@@ -1,0 +1,30 @@
+.main {
+    width: 300px;
+    min-height: 100vh;
+
+    padding-top: 70px;
+
+    background-color: #333;
+    color: #fff;
+}
+
+.item {
+    cursor: pointer;
+    transition: all 250ms ease-out;
+}
+
+.item:hover {
+    background-color: #444;
+}
+
+.isActive {
+    background-color: #444;
+}
+
+.link {
+    display: block;
+    padding: 16px 20px;
+}
+.item.isActive .link {
+    color: rgb(190, 41, 41);
+}

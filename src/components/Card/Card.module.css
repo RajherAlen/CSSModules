@@ -1,0 +1,4 @@
+.card {
+    padding: calc(var(--unit) * 4);
+    background-color: white;
+}

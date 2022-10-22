@@ -8,6 +8,10 @@
     color: #fff;
 }
 
+.main.isCollapsed {
+    width: 70px;
+}
+
 .item {
     cursor: pointer;
     transition: all 250ms ease-out;

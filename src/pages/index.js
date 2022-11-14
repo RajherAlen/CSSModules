@@ -1,5 +1,13 @@
 import Head from "next/head";
-import { Button, Rect, Card, Layout } from "components";
+import {
+    Button,
+    Rect,
+    Card,
+    Layout,
+    MainContent,
+    MainHeader,
+} from "components";
+import React from "react";
 
 export default function Home({ children }) {
     const cardData = [
@@ -27,7 +35,7 @@ export default function Home({ children }) {
 
     let cardNumber = cardData.length > 0 ? cardData.length : 0;
     return (
-        <div>
+        <React.Fragment>
             <Head>
                 <title>CSS Modules</title>
                 <meta
@@ -37,7 +45,11 @@ export default function Home({ children }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div>
+            <MainHeader>
+                <h1>Main title</h1>
+            </MainHeader>
+
+            <MainContent>
                 <h1 className="mb-sml-2">CSS Modules playground</h1>
 
                 <Layout size={cardNumber}>
@@ -55,7 +67,7 @@ export default function Home({ children }) {
 
                 <Button type={"primary"} size={"base"} value={"Submit"} />
                 <Button type={"secondary"} size={"base"} value={"Submit"} />
-            </div>
-        </div>
+            </MainContent>
+        </React.Fragment>
     );
 }

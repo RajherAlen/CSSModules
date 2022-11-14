@@ -1,5 +1,6 @@
 .main {
-    width: 300px;
+    min-width: 240px;
+    max-width: 240px;
     min-height: 100vh;
 
     padding-top: 70px;
@@ -9,7 +10,8 @@
 }
 
 .main.isCollapsed {
-    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
 }
 
 .item {

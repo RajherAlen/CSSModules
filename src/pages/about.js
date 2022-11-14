@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Button, Rect, Card, Layout } from "components";
+import { Button, Rect, Card, Layout, MainContent } from "components";
 
 export default function Home({ children }) {
     const cardData = [
@@ -25,11 +25,13 @@ export default function Home({ children }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div>
+            <MainContent>
                 <h1 className="mb-sml-2">CSS Modules playground</h1>
 
                 <Layout size={cardNumber}>
-                    {cardData.map((card) => <Card title={card.title} key={card.id} />)}
+                    {cardData.map((card) => (
+                        <Card title={card.title} key={card.id} />
+                    ))}
                 </Layout>
 
                 <Rect
@@ -41,7 +43,7 @@ export default function Home({ children }) {
 
                 <Button type={"primary"} size={"base"} value={"Submit"} />
                 <Button type={"secondary"} size={"base"} value={"Submit"} />
-            </div>
+            </MainContent>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import { MainMenu, MainLayout, MainContent } from "components";
+import { MainMenu, MainLayout } from "components";
 import "styles/globals.css";
 import "styles/vars.colors.css";
 import "styles/vars.globals.css";
@@ -8,9 +8,10 @@ function MyApp({ Component, pageProps }) {
     return (
         <MainLayout>
             <MainMenu />
-            <MainContent>
+
+            <div style={{ width: "100%" }}>
                 <Component {...pageProps} />
-            </MainContent>
+            </div>
         </MainLayout>
     );
 }

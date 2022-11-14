@@ -1,0 +1,88 @@
+{
+  "tokenSetOrder": {
+    "0": {
+      "value": "colors",
+      "type": "other"
+    },
+    "1": {
+      "value": "radius",
+      "type": "other"
+    },
+    "2": {
+      "value": "border",
+      "type": "other"
+    },
+    "3": {
+      "value": "typo",
+      "type": "other"
+    }
+  },
+  "h1": {
+    "value": {
+      "fontFamily": "Inter",
+      "fontWeight": 800,
+      "lineHeight": 30,
+      "fontSize": 28,
+      "letterSpacing": -1,
+      "paragraphSpacing": ""
+    },
+    "type": "typography",
+    "description": "H1 Bold"
+  },
+  "Inter": {
+    "value": "Inter",
+    "type": "fontFamilies"
+  },
+  "bold": {
+    "value": 800,
+    "type": "fontWeights"
+  },
+  "regular": {
+    "value": 300,
+    "type": "fontWeights"
+  },
+  "medium": {
+    "value": 500,
+    "type": "fontWeights"
+  },
+  "base": {
+    "value": 14,
+    "type": "fontSizes",
+    "description": "Base font size"
+  },
+  "baseLineHeight": {
+    "value": 20,
+    "type": "lineHeights"
+  },
+  "thick": {
+    "value": 4,
+    "type": "borderWidth"
+  },
+  "colors": {
+    "ui": {
+      "danger": {
+        "value": "#da4242",
+        "type": "color",
+        "description": "Changed color to stronger red"
+      },
+      "border": {
+        "gray": {
+          "value": "#2f2f2f",
+          "type": "color"
+        }
+      }
+    },
+    "brand": {
+      "blue": {
+        "value": "#3427ec",
+        "type": "color",
+        "description": "Primary blue"
+      },
+      "blue-700": {
+        "value": "#150c8d",
+        "type": "color",
+        "description": "Primary blue"
+      }
+    }
+  }
+}

@@ -1,19 +1,32 @@
 {
-  "name": "css-module",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "start": "next dev",
-    "build": "next build",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "8.26.0",
-    "eslint-config-next": "12.3.1"
-  }
+    "name": "css-module",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "transform-tokens": "node transformTokens",
+        "sd-run": "token-transformer ./tokens/tokens.json styles/tokens/sd-tokens.json",
+        "sd-build": "style-dictionary build --config ./tokens/config.json",
+        "sd-dist": "npm run sd-run && npm run sd-build",
+        "start": "next dev",
+        "build": "next build",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "color2k": "^2.0.0",
+        "expr-eval": "^2.0.2",
+        "glob": "^8.0.3",
+        "i": "^0.3.7",
+        "next": "12.3.1",
+        "npm": "^9.1.1",
+        "postcss-calc-ast-parser": "^0.1.4",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "token-transformer": "^0.0.27"
+    },
+    "devDependencies": {
+        "eslint": "8.26.0",
+        "eslint-config-next": "12.3.1",
+        "react-scripts": "^5.0.1",
+        "style-dictionary": "^3.7.1"
+    }
 }

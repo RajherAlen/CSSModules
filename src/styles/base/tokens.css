@@ -1,0 +1,10 @@
+:root {
+  --colors-purple-500: #B955E8;
+  --colors-teal-500: #50DADA;
+  --colors-danger-500: #da4242;
+  --colors-blue-500: #3427ec;
+  --colors-border-gray: #2f2f2f;
+  --radius-base: 4px;
+  --border-thick: 4px;
+  --typo-h1: 800 27/32 Inter;
+}

@@ -3,10 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "transform-tokens": "node transformTokens",
-        "sd-run": "token-transformer ./tokens/tokens.json styles/tokens/sd-tokens.json",
-        "sd-build": "style-dictionary build --config ./tokens/config.json",
-        "sd-dist": "npm run sd-run && npm run sd-build",
+        "token-transformer": "token-transformer ./tokens/tokens.json ./tokens/sd-tokens.json --expandTypography=true",
+        "style-dictionary": "style-dictionary build --config ./tokens/config.json",
+        "tokens-build": "npm run token-transformer && npm run style-dictionary",
         "start": "next dev",
         "build": "next build",
         "lint": "next lint"

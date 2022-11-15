@@ -1,0 +1,33 @@
+/**
+ * Do not edit directly
+ * Generated on Mon, 14 Nov 2022 23:12:58 GMT
+ */
+
+:root {
+  --token-set-order-0: globals;
+  --token-set-order-1: colors;
+  --token-set-order-2: radius;
+  --token-set-order-3: border;
+  --token-set-order-4: typo;
+  --inter: Inter;
+  --regular: 300;
+  --medium: 500;
+  --bold: 800;
+  --font-base: 16;
+  --base-line-height: 24;
+  --font-med: 24;
+  --medium-line-height: 32;
+  --caption-font-family: Inter;
+  --caption-font-weight: 800;
+  --caption-line-height: 24;
+  --caption-font-size: 16;
+  --caption-text-case: uppercase;
+  --thick: 4;
+  --border-radius-base: 4;
+  --border-radius-med: 8;
+  --ui-danger: #da4242;
+  --ui-border-gray: #2f2f2f;
+  --brand-blue: #3427ec;
+  --brand-blue-700: #150c8d;
+  --unit: 4;
+}

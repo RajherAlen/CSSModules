@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "token-transformer": "token-transformer ./tokens/tokens.json ./tokens/sd-tokens.json --expandTypography=true",
+        "token-transformer": "token-transformer ./tokens/tokens.json ./tokens/sd-tokens.json --resolveRefernces=false",
         "style-dictionary": "style-dictionary build --config ./tokens/config.json",
         "tokens-build": "npm run token-transformer && npm run style-dictionary",
         "start": "next dev",
